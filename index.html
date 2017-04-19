@@ -18,7 +18,6 @@
 	
     <!-- Theme CSS -->
     <link href="css/clean-blog.css" rel="stylesheet">
-    <link href="css/home.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -31,49 +30,11 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 
 <body>
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container-fluid">
-           <!--Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >
-                    <span class="sr-only">Toggle navigation</span>
-                    <i class="fa fa-bars"></i> Menu 
-                </button>
-            </div>
-			
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-                    </li>
-					<li>
-                        <a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> News</a>
-                    </li>
-                    <li>
-                        <a href="about.html"><i class="fa fa-calendar" aria-hidden="true"></i> Events</a>
-                    </li>
-					<li>
-                        <a href="replays.html"><i class="fa fa-book" aria-hidden="true"></i> Academics</a>
-                    </li>
-					<li>
-                        <a href="faculty.html"><i class="fa fa-user" aria-hidden="true"></i> Faculty</a>
-                    </li>
-                    <li>
-                        <a href="apply.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Graduates</a>
-                    </li>
-                    <li>
-                        <a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <div id="menu"></div>
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
@@ -94,34 +55,26 @@
     <div class="container">
         <div class="row">
 				<div class="col-xs-6 portfolio-item">
-                    <a href="news.html">   
-                        <div class="button"><i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i>
-                        <p class="buttonName">News</p>
-                        </div>
+                    <a href="news.html">
+                        <img src="img/josh.png" class="img-responsive" alt="Button">
                     </a>
                 </div>
 				<div class="col-xs-6 portfolio-item">
                     <a href="about.html">
-                        <div class="button"><i class="fa fa-calendar fa-4x" aria-hidden="true"></i>
-                        <p class="buttonName">Events</p>
-                        </div>
+                        <img src="img/events.png" class="img-responsive" alt="Button">
                     </a>
                 </div>
         </div>
 		<br>
 		<div class="row">
 				<div class="col-xs-6 portfolio-item">
-                    <a href="replays.html">
-                        <div class="button"><i class="fa fa-book fa-4x" aria-hidden="true"></i>
-                        <p class="buttonName">Academics</p>
-                        </div>
+                    <a href="majors.html">
+                        <img src="img/academics.png" class="img-responsive" alt="Button">
                     </a>
                 </div>
 				<div class="col-xs-6 portfolio-item">
-                    <a href="builds.html">
-                        <div class="button"><i class="fa fa-users fa-4x" aria-hidden="true"></i>
-                        <p class="buttonName">Faculty</p>
-                        </div>
+                    <a href="faculty.html">
+                        <img src="img/faculty.png" class="img-responsive" alt="Button">
                     </a>
                 </div>
         </div>
@@ -129,16 +82,12 @@
 		<div class="row">
 				<div class="col-xs-6 portfolio-item">
                     <a href="apply.html">
-                        <div class="button"><i class="fa fa-graduation-cap fa-4x" aria-hidden="true"></i>
-                        <p class="buttonName">Graduates</p>
-                        </div>
+                        <img src="img/graduates.png" class="img-responsive" alt="Button">
                     </a>
                 </div>
 				<div class="col-xs-6 portfolio-item">
                     <a href="contact.html">
-                        <div class="button"><i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i>
-                        <p class="buttonName">Contact Us</p>
-                        </div>
+                        <img src="img/contactus.png" class="img-responsive" alt="Button">
                     </a>
                 </div>
         </div>
@@ -177,6 +126,7 @@
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
+    <script src="js/menu.js"></script>
 
     <!-- Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
