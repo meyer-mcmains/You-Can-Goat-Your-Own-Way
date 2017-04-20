@@ -15,15 +15,24 @@ pipeline {
         
       }
     }
-    stage('Test') {
-      steps {
-        echo 'Testing Started'
-        junit(allowEmptyResults: true, testResults: 'Results')
-      }
-    }
     stage('Build') {
       steps {
         echo 'Build Started'
+      }
+    }
+    stage('Test') {
+      steps {
+        echo 'Test Started'
+        junit(allowEmptyResults: true, testResults: 'Test Results')
+        waitUntil() {
+          catchError() {
+            error 'Errors Found!'
+            emailext(subject: 'Error Found in Build', body: 'We are Boned', attachLog: true, to: 'meyer.mcmains@gmail.com')
+          }
+          
+        }
+        
+        waitUntil()
       }
     }
   }
