@@ -25,7 +25,7 @@ pipeline {
         echo 'Test Started'
         junit(allowEmptyResults: true, testResults: 'Test Results')
         catchError() {
-          warnings()
+          build 'sadf'
         }
         
       }
