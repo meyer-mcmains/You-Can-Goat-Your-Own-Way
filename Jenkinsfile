@@ -24,14 +24,6 @@ pipeline {
       steps {
         echo 'Test Started'
         junit(allowEmptyResults: true, testResults: 'Test Results')
-        waitUntil() {
-          catchError() {
-            error 'Errors Found!'
-            mail(subject: 'Tests Failed', body: 'We are Boned', from: 'Jenkins', to: 'meyer.mcmains@gmail.com')
-          }
-          
-        }
-        
       }
     }
   }
