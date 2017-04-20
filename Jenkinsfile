@@ -1,9 +1,20 @@
 pipeline {
   agent any
   stages {
-    stage('Test') {
+    stage('Wait for Push') {
       steps {
-        echo 'Jaja'
+        echo 'Branch Pushed'
+      }
+    }
+    stage('Merge') {
+      steps {
+        echo 'Merge Started'
+        timestamps()
+      }
+    }
+    stage('Build') {
+      steps {
+        echo 'Testing Started'
       }
     }
   }
