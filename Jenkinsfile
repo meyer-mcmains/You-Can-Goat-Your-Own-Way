@@ -25,7 +25,7 @@ pipeline {
         echo 'Test Started'
         junit(allowEmptyResults: true, testResults: 'Test Results')
         catchError() {
-          build 'bvnbnxvbv'
+          build 'kjhjgfyf'
         }
         
       }
