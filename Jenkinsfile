@@ -9,7 +9,10 @@ pipeline {
     stage('Merge') {
       steps {
         echo 'Merge Started'
-        timestamps()
+        timestamps() {
+          echo 'timestamp'
+        }
+        
       }
     }
     stage('Build') {
