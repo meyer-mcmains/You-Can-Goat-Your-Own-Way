@@ -24,10 +24,6 @@ pipeline {
       steps {
         echo 'Test Started'
         junit(allowEmptyResults: true, testResults: 'Test Results')
-        catchError() {
-          build '7856456'
-        }
-        
       }
     }
   }
