@@ -15,9 +15,15 @@ pipeline {
         
       }
     }
-    stage('Build') {
+    stage('Test') {
       steps {
         echo 'Testing Started'
+        junit(allowEmptyResults: true, testResults: 'Results')
+      }
+    }
+    stage('Build') {
+      steps {
+        echo 'Build Started'
       }
     }
   }
