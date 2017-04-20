@@ -27,12 +27,11 @@ pipeline {
         waitUntil() {
           catchError() {
             error 'Errors Found!'
-            emailext(subject: 'Error Found in Build', body: 'We are Boned', attachLog: true, to: 'meyer.mcmains@gmail.com')
+            mail(subject: 'Tests Failed', body: 'We are Boned', from: 'Jenkins', to: 'meyer.mcmains@gmail.com')
           }
           
         }
         
-        waitUntil()
       }
     }
   }
