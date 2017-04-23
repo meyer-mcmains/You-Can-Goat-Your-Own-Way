@@ -10,14 +10,15 @@
     <meta name="author" content="">
 
     <title>Department of Computing</title>
-	<link rel="icon" type="image/png" href="icon.png" />
-	
-	
+    <link rel="icon" type="image/png" href="icon.png" />
+    
+    
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-	
+    
     <!-- Theme CSS -->
     <link href="css/clean-blog.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -30,71 +31,81 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body>
+    
     <div id="menu"></div>
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-		<header class="intro-header" style="background-image: url('creepybanner.jpg')">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-						<div class="site-heading">
-						<h1><img src="overlay.png"/>
-							<hr class="small">
-							<span class="subheading">EAST TENNESSEE STATE UNIVERSITY</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
+        <header class="intro-header" style="background-image: url('img/creepybanner.jpg')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="edit site-heading">
+                        <h1><img class="overlay" src="img/overlay.png"/>
+                            <hr class="small">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
     <!-- Main Content -->
     <div class="container">
         <div class="row">
-				<div class="col-xs-6 portfolio-item">
-                    <a href="news.html">
-                        <img src="img/josh.png" class="img-responsive" alt="Button">
+                <div class="col-xs-6 portfolio-item">
+                    <a href="news.html">   
+                        <div class="button"><i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i>
+                        <p class="buttonName">News</p>
+                        </div>
                     </a>
                 </div>
-				<div class="col-xs-6 portfolio-item">
-                    <a href="about.html">
-                        <img src="img/events.png" class="img-responsive" alt="Button">
+                <div class="col-xs-6 portfolio-item">
+                    <a href="events.html">
+                        <div class="button"><i class="fa fa-calendar fa-4x" aria-hidden="true"></i>
+                        <p class="buttonName">Events</p>
+                        </div>
                     </a>
                 </div>
         </div>
-		<br>
-		<div class="row">
-				<div class="col-xs-6 portfolio-item">
-                    <a href="majors.html">
-                        <img src="img/academics.png" class="img-responsive" alt="Button">
+        <br>
+        <div class="row">
+                <div class="col-xs-6 portfolio-item">
+                    <a href="academics.html">
+                        <div class="button"><i class="fa fa-book fa-4x" aria-hidden="true"></i>
+                        <p class="buttonName">Academics</p>
+                        </div>
                     </a>
                 </div>
-				<div class="col-xs-6 portfolio-item">
+                <div class="col-xs-6 portfolio-item">
                     <a href="faculty.html">
-                        <img src="img/faculty.png" class="img-responsive" alt="Button">
+                        <div class="button"><i class="fa fa-users fa-4x" aria-hidden="true"></i>
+                        <p class="buttonName">Faculty</p>
+                        </div>
                     </a>
                 </div>
         </div>
-		<br>
-		<div class="row">
-				<div class="col-xs-6 portfolio-item">
-                    <a href="apply.html">
-                        <img src="img/graduates.png" class="img-responsive" alt="Button">
+        <br>
+        <div class="row">
+                <div class="col-xs-6 portfolio-item">
+                    <a href="graduates.html">
+                        <div class="button"><i class="fa fa-graduation-cap fa-4x" aria-hidden="true"></i>
+                        <p class="buttonName">Graduates</p>
+                        </div>
                     </a>
                 </div>
-				<div class="col-xs-6 portfolio-item">
+                <div class="col-xs-6 portfolio-item">
                     <a href="contact.html">
-                        <img src="img/contactus.png" class="img-responsive" alt="Button">
+                        <div class="button"><i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i>
+                        <p class="buttonName">Contact Us</p>
+                        </div>
                     </a>
                 </div>
         </div>
-		
+        
     </div>
-
-    <hr>
 
     <!-- Footer 
     <footer>
@@ -126,10 +137,12 @@
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
-    <script src="js/menu.js"></script>
 
     <!-- Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
+
+    <!-- Nav Bar -->
+    <script src="js/menu.js"></script>
 
 </body>
 
