@@ -13,7 +13,7 @@ htmlm = '<!-- Navigation -->' +
 		            '<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">' +
 		                '<ul class="nav navbar-nav navbar-right">' +
 		                    '<li>' +
-		                        '<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>' +
+		                        '<a href="home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>' +
 		                    '</li>' +
 		                    '<li>' +
 		                        '<a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> News</a>' +

@@ -31,11 +31,17 @@ a:hover {
 
 .overlay {
 	width: 100%;
-	opacity: 1.0;
+	opacity: 1.0 !important;
 }
 
 .edit {
 	border-radius: 10px;
-	background-color: #FFF !important;
+	background-color: rgba(255,255,255,0.7) !important;
 	padding: 0px !important;
+	opacity: 1.0 !important;
+	margin-top: 3.5% !important;
+}
+
+.goat {
+	width: 70px;
 }
