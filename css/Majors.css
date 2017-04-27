@@ -161,3 +161,7 @@ h3{
 .imgCont .fa {
   color: #e0e0e0;
 }
+
+.section-heading {
+  margin-top: 0px !important;
+}
