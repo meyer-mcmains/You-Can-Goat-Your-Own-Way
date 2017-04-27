@@ -27,7 +27,7 @@ h3{
 .title {
 	width: 70%;
 	font-family: arial;
-	font-size: 4vw;
+	font-size: 3.8vw;
   margin-top: 5%;
 }
 .imgCont {
@@ -158,8 +158,10 @@ h3{
   }
 }
 
-.imgCont .fa {
-  color: #e0e0e0;
+.imgCont img {
+  width: 50px;
+  margin-left: -20px;
+  margin-top: 10px;
 }
 
 .section-heading {
